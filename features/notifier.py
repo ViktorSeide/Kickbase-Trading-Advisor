@@ -82,7 +82,7 @@ def send_mail(budget_df, market_df, squad_df, email):
     """, subtype="html")
 
     # Send email via Gmail SMTP
-    with smtplib.SMTP("smtp.gmail.com", 587) as smtp:
+    with smtplib.SMTP("mail.gmx.net", 587) as smtp:
         smtp.starttls()
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         smtp.send_message(msg)
